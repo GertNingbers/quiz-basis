@@ -5,12 +5,12 @@ echo "Welkom bij mijn quiz!\n";
 $random = rand(1, 100);
 $gok = 0;
 $beurten=0;
-$getal1=1;
+
 
 while ($random != $gok) {
 
     $gok = readline("gok een nummer tussen de 1 en 100 of type stop: ");
-    
+
     if ($gok === "stop") {
         exit("uw heeft op stop gedrukt.\n");
     }
@@ -24,16 +24,18 @@ while ($random != $gok) {
     }
 
     if ($random > $gok) {
-        echo "Ah wat jammer je moet wat hooger gokken.\n"; $beurten=$beurten + $getal1;
+        echo "Ah wat jammer je moet wat hooger gokken.\n"; 
     }
 
     if ($random < $gok) {
-        echo "Oef je moet wat lager gokken.\n"; $beurten=$beurten + $getal1;
+        echo "Oef je moet wat lager gokken.\n"; 
     }
     
     if ($random == $gok) {
-        echo "Gefeliciteerd je hebt goed gegokt.\n"; $beurten=$beurten + $getal1;
+        echo "Gefeliciteerd je hebt goed gegokt.\n"; 
     }
 
-}
+    $beurten++;
+
+};
 echo "Je hebt het binnen $beurten beurten gegokt";
