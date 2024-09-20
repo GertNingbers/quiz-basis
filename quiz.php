@@ -3,7 +3,6 @@
 echo "Welkom bij mijn quiz!\n";
 
 $random = rand(1, 100);
-echo "$random\n";
 $gok = 0;
 $beurten=0;
 $getal1=1;
@@ -37,4 +36,4 @@ while ($random != $gok) {
     }
 
 }
-echo "Je hebt het binnen $beurten gegokt";
+echo "Je hebt het binnen $beurten beurten gegokt";
